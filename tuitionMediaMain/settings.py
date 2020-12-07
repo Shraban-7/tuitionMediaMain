@@ -40,7 +40,6 @@ INSTALLED_APPS = [
     'tuition',
     'accounts',
     'rest_framework',
-    # 'multiselectfield',
 ]
 
 MIDDLEWARE = [

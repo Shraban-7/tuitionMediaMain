@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block title %}
+Lists
+{% endblock %}
+{% block content %}
+<div class="container">
+{% for object in object_list %}
+<div class="card">
+  <div class="card-header">
+    {{ object.fullname }}
+  </div>
+  <div class="card-body">
+
+    <p class="card-text">{{ object.detail_tuition }}</p>
+    <a href="{% url 'detail' object.pk %}" class="btn btn-primary">Detail</a>
+  </div>
+</div>
+{% endfor %}
+
+</div>
+{% endblock %}
